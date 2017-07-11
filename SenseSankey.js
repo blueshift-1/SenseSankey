@@ -54,7 +54,9 @@ define(
 								min: 1,
 								max: 1
 							}
+						}
 					},
+						
 					//sorting: {
 					//	uses: "sorting"
 					//},
