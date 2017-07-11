@@ -40,15 +40,20 @@ define(
 				type: "items",
 				component: "accordion",
 				items: {
-					dimensions: {
-						uses: "dimensions",
-						min: 2,
-						max: 7 // Increased to 7 (Necessary for Exploded BOMs)
-					},
-					measures: {
-						uses: "measures",
-						min: 1,
-						max: 1
+					data: { 
+						uses: "data",
+						type: "items",
+						items : {
+							dimensions: {
+								uses: "dimensions",
+								min: 2,
+								max: 4 // Returned 
+							},
+							measures: {
+								uses: "measures",
+								min: 1,
+								max: 1
+							}
 					},
 					//sorting: {
 					//	uses: "sorting"
