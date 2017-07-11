@@ -43,7 +43,8 @@ define(
 					dimensions: {
 						uses: "dimensions",
 						min: 2,
-						max: 4				},
+						max: 7 // Increased to 7 (Necessary for Exploded BOMs)
+					},
 					measures: {
 						uses: "measures",
 						min: 1,
@@ -52,6 +53,17 @@ define(
 					//sorting: {
 					//	uses: "sorting"
 					//},
+					
+
+					addons: {  
+					     uses: "addons",  
+					     items: {  
+						  dataHandling: {  
+						       uses: "dataHandling"  
+						  }  
+					     }  
+					},
+					
 					settings: {
 						uses: "settings",
 						type: "items",
